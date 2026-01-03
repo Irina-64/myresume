@@ -1,0 +1,10 @@
+Always follow SOLID and KISS principles
+Clean up unused code
+if task is unclear ask clearing questions
+Follow best practices and design patterns appropriate for language, framework and project
+Prioriteze clean, efficient and maintainable code
+Prioriteze clean, efficient and maintainable code
+Always answer in russian language
+
+
+
