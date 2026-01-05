@@ -1,124 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личный сайт разработчика</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный сайт разработчика</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <section class="hero">
-        <div class="stars-container" id="starsContainer"></div>
-        <div class="hero-content">
-            <h1 class="hero-name">Ирина Трубчик</h1>
-            <p class="hero-bio">
-                доцент вуза, увлечённый созданием современных веб-приложений 
-                и изучением новых технологий.
-            </p>
-            <h2 class="hero-subtitle">Мой путь в IT + AI</h2>
-            <a href="#skills" class="cta-button">Мои навыки</a>
-        </div>
-    </section>
+  <section class="hero">
+    <div class="stars-container" id="starsContainer"></div>
+    <div class="hero-content">
+      <h1 class="hero-name">Ирина Трубчик</h1>
+      <p class="hero-bio">
+        доцент вуза, увлечённый созданием современных веб-приложений
+        и изучением новых технологий.
+      </p>
+      <h2 class="hero-subtitle">
+        <a href="#skill-index-section" class="hero-subtitle-link">Мой путь в IT + AI</a>
+      </h2>
+      <a href="#skills" class="cta-button">Мои навыки</a>
+    </div>
+  </section>
 
-    <section id="skills" class="skills">
-        <div class="skills-header">
-            <h2 class="skills-title">Мои навыки</h2>
-            <button type="button" id="add-skill-button" class="skills-add-button">
-                Добавить навык
-            </button>
-        </div>
-        <div id="skills-grid" class="skills-grid" aria-live="polite"></div>
+  <section id="skills" class="skills">
+    <div class="skills-header">
+      <h2 class="skills-title">Мои навыки</h2>
+      <button type="button" id="add-skill-button" class="skills-add-button">
+        Добавить навык
+      </button>
+    </div>
+    <div id="skills-grid" class="skills-grid" aria-live="polite"></div>
 
-        <!-- Компактная карточка "Мой индекс навыков" -->
-        <section class="skill-index-section" aria-labelledby="skill-index-title">
-            <h2 id="skill-index-title" class="skill-index-title">Мой индекс навыков</h2>
+    <!-- Компактная карточка "Мой индекс навыков" -->
+    <section class="skill-index-section" aria-labelledby="skill-index-title">
+      <h2 id="skill-index-title" class="skill-index-title">Мой индекс навыков</h2>
 
-            <div class="skill-index-layout">
-                <div class="skill-sliders">
-                    <!-- HTML -->
-                    <div class="skill-item">
-                        <label for="skill-html">HTML</label>
-                        <input id="skill-html" type="range" min="0" max="100" step="1">
-                        <div class="skill-value">
-                            <span id="skill-html-value">0</span><span>%</span>
-                        </div>
-                    </div>
-
-                    <!-- CSS -->
-                    <div class="skill-item">
-                        <label for="skill-css">CSS</label>
-                        <input id="skill-css" type="range" min="0" max="100" step="1">
-                        <div class="skill-value">
-                            <span id="skill-css-value">0</span><span>%</span>
-                        </div>
-                    </div>
-
-                    <!-- JavaScript -->
-                    <div class="skill-item">
-                        <label for="skill-js">JavaScript</label>
-                        <input id="skill-js" type="range" min="0" max="100" step="1">
-                        <div class="skill-value">
-                            <span id="skill-js-value">0</span><span>%</span>
-                        </div>
-                    </div>
-
-                    <!-- React / Vue -->
-                    <div class="skill-item">
-                        <label for="skill-react-vue">React / Vue</label>
-                        <input id="skill-react-vue" type="range" min="0" max="100" step="1">
-                        <div class="skill-value">
-                            <span id="skill-react-vue-value">0</span><span>%</span>
-                        </div>
-                    </div>
-
-                    <!-- LLM / Нейросети -->
-                    <div class="skill-item">
-                        <label for="skill-llm">LLM / Нейросети</label>
-                        <input id="skill-llm" type="range" min="0" max="100" step="1">
-                        <div class="skill-value">
-                            <span id="skill-llm-value">0</span><span>%</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-summary">
-                    <div class="skill-summary-header">
-                        <span class="skill-summary-label">Итоговый уровень:</span>
-                        <span class="skill-summary-percent">
-                            <span id="skill-average-value">0</span><span>%</span>
-                        </span>
-                    </div>
-
-                    <!-- Индикатор-гейдж -->
-                    <div class="skill-gauge">
-                        <div class="skill-gauge-fill" id="skill-gauge-fill"></div>
-                    </div>
-
-                    <p class="skill-description" id="skill-description">
-                        Начни двигать ползунки, чтобы увидеть свой индекс навыков.
-                    </p>
-                </div>
+      <div class="skill-index-layout" id="skill-index-section">
+        <div class="skill-sliders">
+          <!-- HTML -->
+          <div class="skill-item">
+            <label for="skill-html">HTML</label>
+            <input id="skill-html" type="range" min="0" max="100" step="1">
+            <div class="skill-value">
+              <span id="skill-html-value">0</span><span>%</span>
             </div>
-        </section>
-    </section>
+          </div>
 
-    <section id="contacts" class="contacts">
-        <div class="contacts-inner">
-            <h2 class="contacts-title">Мои контакты</h2>
-            <div class="contacts-links" aria-label="Ссылки на мои профили">
-                <a href="https://github.com/Irina-64" class="contact-icon contact-icon--github" aria-label="GitHub">
-                    <span class="contact-icon-symbol">GH</span>
-                </a>
-                <a href="https://t.me/Luna206" class="contact-icon contact-icon--telegram" aria-label="Telegram">
-                    <span class="contact-icon-symbol">TG</span>
-                </a>
-                <a href="mailto:trira2011@yandex.ru" class="contact-icon contact-icon--email" aria-label="Email">
-                    <span class="contact-icon-symbol">@</span>
-                </a>
+          <!-- CSS -->
+          <div class="skill-item">
+            <label for="skill-css">CSS</label>
+            <input id="skill-css" type="range" min="0" max="100" step="1">
+            <div class="skill-value">
+              <span id="skill-css-value">0</span><span>%</span>
             </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-item">
+            <label for="skill-js">JavaScript</label>
+            <input id="skill-js" type="range" min="0" max="100" step="1">
+            <div class="skill-value">
+              <span id="skill-js-value">0</span><span>%</span>
+            </div>
+          </div>
+
+          <!-- React / Vue -->
+          <div class="skill-item">
+            <label for="skill-react-vue">React / Vue</label>
+            <input id="skill-react-vue" type="range" min="0" max="100" step="1">
+            <div class="skill-value">
+              <span id="skill-react-vue-value">0</span><span>%</span>
+            </div>
+          </div>
+
+          <!-- LLM / Нейросети -->
+          <div class="skill-item">
+            <label for="skill-llm">LLM / Нейросети</label>
+            <input id="skill-llm" type="range" min="0" max="100" step="1">
+            <div class="skill-value">
+              <span id="skill-llm-value">0</span><span>%</span>
+            </div>
+          </div>
         </div>
+
+        <div class="skill-summary">
+          <div class="skill-summary-header">
+            <span class="skill-summary-label">Итоговый уровень:</span>
+            <span class="skill-summary-percent">
+              <span id="skill-average-value">0</span><span>%</span>
+            </span>
+          </div>
+
+          <!-- Индикатор-гейдж -->
+          <div class="skill-gauge">
+            <div class="skill-gauge-fill" id="skill-gauge-fill"></div>
+          </div>
+
+          <p class="skill-description" id="skill-description">
+            Начни двигать ползунки, чтобы увидеть свой индекс навыков.
+          </p>
+        </div>
+      </div>
     </section>
-      
-    <script src="script.js"></script>
+  </section>
+
+  <section id="contacts" class="contacts">
+    <div class="contacts-inner">
+      <h2 class="contacts-title">Мои контакты</h2>
+      <div class="contacts-links" aria-label="Ссылки на мои профили">
+        <a href="https://github.com/Irina-64" class="contact-icon contact-icon--github" aria-label="GitHub">
+          <span class="contact-icon-symbol">GH</span>
+        </a>
+        <a href="https://t.me/Luna206" class="contact-icon contact-icon--telegram" aria-label="Telegram">
+          <span class="contact-icon-symbol">TG</span>
+        </a>
+        <a href="mailto:trira2011@yandex.ru" class="contact-icon contact-icon--email" aria-label="Email">
+          <span class="contact-icon-symbol">@</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
