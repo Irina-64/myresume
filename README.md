@@ -1,2 +1,2 @@
-# myresume-in-cursor
+# myresume
 учебный проект из интенсива "IT+AI"  в ResultSchool
